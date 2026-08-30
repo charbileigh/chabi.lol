@@ -94,6 +94,19 @@ h3 { line-height: 1.25; }
 .profile-card__kicker { color: var(--pink-deep); font-size: .76rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .profile-card h2 { font-size: 3.1rem; margin-bottom: 18px; }
 .profile-card p { color: var(--ink-soft); }
+.flower-stage { display: grid; place-items: center; min-height: 220px; margin: -4px 0 18px; overflow: hidden; }
+.rotating-flower {
+  display: block;
+  width: min(220px, 78%);
+  height: auto;
+  mix-blend-mode: multiply;
+  transform-origin: center;
+  animation: flower-spin 12s linear infinite;
+  will-change: transform;
+}
+@keyframes flower-spin {
+  to { transform: rotate(360deg); }
+}
 .profile-card__tags, .tag-row, .case-topline { display: flex; flex-wrap: wrap; gap: 8px; }
 .profile-card__tags span, .tag-row span, .case-topline span { padding: 7px 10px; border-radius: 999px; background: var(--blush); color: var(--pink-deep); font-size: .74rem; font-weight: 700; }
 .floral { position: absolute; z-index: 1; color: rgba(217,90,131,.5); line-height: 1; user-select: none; pointer-events: none; }
@@ -206,6 +219,8 @@ footer p:last-child { text-align: right; }
   .visual-ring--two { width: 365px; height: 365px; }
   .profile-card { padding: 28px; border-radius: 28px; }
   .profile-card h2 { font-size: 2.45rem; }
+  .flower-stage { min-height: 174px; margin-bottom: 14px; }
+  .rotating-flower { width: min(174px, 70%); }
   .floral--a { top: 7%; right: 1%; }
   .floral--b { left: 0; bottom: 7%; }
   .process-grid, .capability-grid, .education-grid { grid-template-columns: 1fr; }
