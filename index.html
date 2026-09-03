@@ -1,364 +1,260 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mmasechaba Francesca Seopa — Technical Systems Analyst with experience across systems analysis, software quality assurance, software development, telecommunications, IoT and production support." />
-  <title>Mmasechaba Francesca Seopa</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#home" aria-label="Mmasechaba Francesca Seopa home">
-      <span class="brand-mark" aria-hidden="true">♡</span>
-      <span>Mmasechaba Francesca Seopa</span>
-    </a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mmasechaba Francesca Seopa is a technical systems analyst working across systems analysis, software quality, delivery and production support."
+    />
+    <meta name="theme-color" content="#ff4fa3" />
+    <title>Chabi — Systems, Software &amp; Quality</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to the useful bit</a>
 
-    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Chabi, back to top">
+        <span class="wordmark-mark" aria-hidden="true">C.</span>
+        <span>CHABI / SYSTEMS</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#case-files">Case files</a>
+        <a href="#changelog">Changelog</a>
+        <a href="#toolbox">Toolbox</a>
+        <a class="nav-cta" href="mailto:chabi.seopa@gmail.com">Send a signal ↗</a>
+      </nav>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        Menu
+      </button>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <a href="#case-files">Case files</a>
+        <a href="#changelog">Changelog</a>
+        <a href="#toolbox">Toolbox</a>
+        <a href="mailto:chabi.seopa@gmail.com">Send a signal ↗</a>
+      </nav>
+    </header>
 
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#home">Home</a>
-      <a href="#approach">Approach</a>
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#capabilities">Capabilities</a>
-      <a href="#about">About</a>
-      <a class="nav-cta" href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero section" id="home">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Technical Systems Analyst · Johannesburg, South Africa</p>
-        <h1>I make complex systems <em>make sense.</em></h1>
-        <p class="hero-intro">
-          With over 4 years of experience; I work at the intersection of systems analysis, software quality, software delivery and production support—translating business needs into technical solutions and helping teams move from ambiguity to reliable outcomes.
-        </p>
-        <div class="hero-actions">
-          <a class="button button--primary" href="#work">View selected work</a>
-          <a class="button button--secondary" href="#experience">Explore experience</a>
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="status-ribbon" aria-label="Current professional status">
+          <span>Johannesburg, South Africa</span>
+          <span class="status-live"><i aria-hidden="true"></i> Open to interesting problems</span>
+          <span>Technical Systems Analyst</span>
         </div>
-        <div class="hero-meta" aria-label="Professional highlights">
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Hello, I’m Mmasechaba. Chabi is easier.</p>
+            <h1 id="hero-title">
+              I make complicated systems
+              <span>less dramatic.</span>
+            </h1>
+            <p class="hero-intro">
+              I work where business needs, software quality and production reality collide—then turn the
+              confusion into requirements, workflows, tests and reliable releases.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#case-files">Inspect the evidence ↓</a>
+              <a class="text-link" href="#about">Read the human README</a>
+            </div>
+            <p class="small-note">Four years across engineering, software, QA, telecoms and systems. Zero interest in making simple things sound mysterious.</p>
+          </div>
+
+          <aside class="diagnostic" aria-labelledby="diagnostic-title">
+            <div class="window-bar">
+              <span>CHABI_DIAGNOSTIC.exe</span>
+              <div aria-hidden="true"><i></i><i></i><i></i></div>
+            </div>
+            <div class="diagnostic-body">
+              <p class="kicker">A tiny professional diagnostic</p>
+              <h2 id="diagnostic-title">What kind of chaos have you got?</h2>
+              <div class="diagnostic-options" role="group" aria-label="Choose a problem type">
+                <button type="button" class="mode-button active" data-mode="requirements" aria-pressed="true">Vague requirements</button>
+                <button type="button" class="mode-button" data-mode="quality" aria-pressed="false">Nervous release</button>
+                <button type="button" class="mode-button" data-mode="incident" aria-pressed="false">Production gremlin</button>
+                <button type="button" class="mode-button" data-mode="process" aria-pressed="false">Process spaghetti</button>
+              </div>
+              <div class="diagnostic-result" aria-live="polite">
+                <p class="result-label">My move</p>
+                <p class="result-copy" id="result-copy">Find the missing rules, edge cases and assumptions—then turn them into something a team can actually build and test.</p>
+                <div class="result-tools" id="result-tools">
+                  <span>Requirements</span><span>Workflows</span><span>Acceptance criteria</span>
+                </div>
+              </div>
+              <p class="diagnostic-footnote">No login. No “quick sync” that becomes an hour.</p>
+            </div>
+          </aside>
         </div>
-      </div>
+      </section>
 
-      <div class="hero-visual reveal" aria-hidden="true">
-        <div class="visual-ring visual-ring--one"></div>
-        <div class="visual-ring visual-ring--two"></div>
-        <div class="profile-card">
-          <p class="profile-card__kicker">Professional range</p>
-          <div class="flower-stage">
-            <img class="rotating-flower" src="images/rotating-flower.png" alt="" />
-          </div>
-          <p>My background spans software development, technical support, quality assurance, IoT platforms, telecommunications systems and enterprise delivery.</p>
-          <div class="profile-card__tags">
-            <span>Requirements</span><span>SQL</span><span>QA</span><span>APIs</span><span>IoT</span><span>Production</span>
-          </div>
-        </div>
-        <span class="floral floral--a">✿</span>
-        <span class="floral floral--b">❀</span>
-        <span class="floral floral--c">✦</span>
-      </div>
-    </section>
-
-    <section class="section compact" id="approach">
-      <div class="section-heading reveal">
-        <p class="eyebrow">How I work</p>
-        <h2>Clear thinking before clever solutions.</h2>
-        <p>I start by understanding what is actually happening—then I shape requirements, investigate the technical detail, and validate that the solution works in context.</p>
-      </div>
-
-      <div class="process-grid">
-        <article class="process-card reveal" tabindex="0">
-          <span class="process-number">01</span>
-          <h3>Understand</h3>
-          <p>Explore stakeholder needs, business rules, current behaviour, technical constraints and operational context.</p>
-        </article>
-        <article class="process-card reveal" tabindex="0">
-          <span class="process-number">02</span>
-          <h3>Analyse</h3>
-          <p>Trace processes, integrations, data flows, dependencies and edge cases to build an accurate picture of the system.</p>
-        </article>
-        <article class="process-card reveal" tabindex="0">
-          <span class="process-number">03</span>
-          <h3>Translate</h3>
-          <p>Turn findings into practical requirements, functional specifications, workflows, acceptance criteria and solution documentation.</p>
-        </article>
-        <article class="process-card reveal" tabindex="0">
-          <span class="process-number">04</span>
-          <h3>Validate</h3>
-          <p>Test behaviour through QA, API and database checks, UAT, deployment support, monitoring and production investigation.</p>
-        </article>
-      </div>
-      <div class="hero-meta" aria-label="Professional highlights"></div>
-    </section>
-
-    <section class="section" id="work">
-      
-      <div class="section-heading reveal">
-        <p class="eyebrow">Selected work</p>
-        <h2>Work that sits between people, systems and delivery.</h2>
-        <p>Representative examples of the kind of analysis and delivery problems I solve in Agile and production environments.</p>
-      </div>
-
-      <div class="work-grid">
-        <article class="case-card reveal">
-          <div class="case-number">01</div>
-          <div class="case-topline"><span>Requirements Analysis</span><span>Agile Delivery</span></div>
-          <h3>Clarifying Ambiguous Requirements</h3>
-          <p class="case-problem">A user story lacked enough detail for confident implementation, creating repeated developer questions and unnecessary delivery risk.</p>
-          <div class="case-impact">
-            <strong>My contribution</strong>
-            <p>Identified missing business rules, clarified expected behaviour, aligned stakeholders and translated ambiguity into testable acceptance criteria.</p>
-          </div>
-          <button class="text-link case-toggle" type="button" aria-expanded="false">View case summary <span>↗</span></button>
-          <div class="case-details">
-            <p><strong>Approach:</strong> requirements review, stakeholder clarification, edge-case analysis, functional thinking and validation with delivery teams.</p>
-            <p><strong>Outcome:</strong> clearer shared understanding before implementation and fewer avoidable questions during development.</p>
-          </div>
-        </article>
-
-        <article class="case-card reveal">
-          <div class="case-number">02</div>
-          <div class="case-topline"><span>Incident Analysis</span><span>Production Support</span></div>
-          <h3>Investigating a Critical Production Incident</h3>
-          <p class="case-problem">A production issue affected expected system behaviour and required structured technical investigation across data, application logic and dependencies.</p>
-          <div class="case-impact">
-            <strong>My contribution</strong>
-            <p>Traced system behaviour, inspected data, reproduced the issue, assessed impact and worked with delivery teams to narrow down root cause.</p>
-          </div>
-          <button class="text-link case-toggle" type="button" aria-expanded="false">View case summary <span>↗</span></button>
-          <div class="case-details">
-            <p><strong>Approach:</strong> incident triage, SQL inspection, defect reproduction, dependency analysis and stakeholder communication.</p>
-            <p><strong>Outcome:</strong> reduced uncertainty and supported a more targeted resolution path for the team.</p>
-          </div>
-        </article>
-
-        <article class="case-card reveal">
-          <div class="case-number">03</div>
-          <div class="case-topline"><span>Software Quality</span><span>Automation</span></div>
-          <h3>Strengthening Quality Across Delivery</h3>
-          <p class="case-problem">Manual testing and late validation created avoidable effort and made it harder to catch defects early in the delivery lifecycle.</p>
-          <div class="case-impact">
-            <strong>My contribution</strong>
-            <p>Built and maintained automated tests, validated APIs and databases, supported end-to-end testing and improved the consistency of quality checks.</p>
-          </div>
-          <button class="text-link case-toggle" type="button" aria-expanded="false">View case summary <span>↗</span></button>
-          <div class="case-details">
-            <p><strong>Approach:</strong> Robot Framework automation, API validation, regression coverage, backend checks, test planning and release verification.</p>
-            <p><strong>Outcome:</strong> broader test coverage, reduced manual effort and stronger confidence in production releases.</p>
-          </div>
-        </article>
-      </div>
-      <div class="hero-meta" aria-label="Professional highlights"></div>
-    </section>
-
-    <section class="section split-section" id="experience">
-      <div class="section-heading sticky-copy reveal">
-        <p class="eyebrow">Experience</p>
-        <h2>A career built across engineering, software, quality and systems.</h2>
-        <p>My path has moved steadily closer to whole-system thinking: from engineering and platform support, into development and QA, and now into technical systems analysis.</p>
-      </div>
-
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <span class="timeline-dot"></span>
-          <p class="timeline-date">Mar 2026 — Present</p>
-          <h3>Technical Systems Analyst</h3>
-          <p class="timeline-org">Digitata Networks</p>
-          <p>Analyse business and technical requirements, design workflows and system solutions, produce functional documentation, support incidents, releases and Agile delivery, and provide technical insight into integrations, system behaviour and business process flows.</p>
-          <div class="tag-row"><span>Requirements</span><span>Solution Design</span><span>SQL</span><span>APIs</span><span>Production Support</span></div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <span class="timeline-dot"></span>
-          <p class="timeline-date">Jan 2023 — Mar 2026</p>
-          <h3>Configuration Engineer</h3>
-          <p class="timeline-org">Digitata Networks</p>
-          <p>Supported telecommunications and IoT platforms, developed automated test suites, performed functional and integration testing, validated databases and APIs, investigated defects, automated operational processes and supported deployments and incident resolution.</p>
-          <div class="tag-row"><span>Robot Framework</span><span>Python</span><span>PostgreSQL</span></div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <span class="timeline-dot"></span>
-          <p class="timeline-date">Nov 2022 — Jan 2023</p>
-          <h3>Junior Software Developer</h3>
-          <p class="timeline-org">Digitata Networks</p>
-          <p>Contributed to enterprise software maintenance and enhancement, wrote SQL queries, supported debugging and testing, and collaborated with QA and business teams across delivery cycles.</p>
-          <div class="tag-row"><span>JavaScript</span><span>SQL</span><span>PostgreSQL</span><span>Git</span></div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <span class="timeline-dot"></span>
-          <p class="timeline-date">2022</p>
-          <h3>Graduate Engineer: IoT/M2M Platforms & Cybersecurity</h3>
-          <p class="timeline-org">MTN South Africa</p>
-          <p>Supported IoT and M2M platform operations, assisted with telecommunications troubleshooting, monitoring, reporting, service assurance and cybersecurity-related operational activities.</p>
-          <div class="tag-row"><span>IoT</span><span>M2M</span><span>Telecommunications</span><span>Cybersecurity</span></div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <span class="timeline-dot"></span>
-          <p class="timeline-date">Dec 2021 — May 2022</p>
-          <h3>Junior Full Stack Developer</h3>
-          <p class="timeline-org">MethodData</p>
-          <p>Worked on web-based software applications across frontend, backend, API integration, database development, debugging, testing and deployment activities in an Agile environment.</p>
-          <div class="tag-row"><span>JavaScript</span><span>SQL</span><span>REST APIs</span><span>Agile</span></div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <span class="timeline-dot"></span>
-          <p class="timeline-date">Jul 2021 — Nov 2021</p>
-          <h3>New Venture Support Intern</h3>
-          <p class="timeline-org">UCT Research Contracts & Innovation</p>
-          <p>Supported entrepreneurship and innovation initiatives through research, stakeholder engagement, project coordination, reporting and administrative support.</p>
-          <div class="tag-row"><span>Research</span><span>Stakeholders</span><span>Coordination</span></div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <span class="timeline-dot"></span>
-          <p class="timeline-date">Jun 2019 — Jul 2019</p>
-          <h3>Asset Care Engineering Intern</h3>
-          <p class="timeline-org">Pragma Global</p>
-          <p>Supported asset management and maintenance initiatives through data collection, reporting and process improvement work in an engineering environment.</p>
-          <div class="tag-row"><span>Engineering</span><span>Asset Management</span><span>Process Improvement</span></div>
-        </article>
-      </div>
-      <div class="hero-meta" aria-label="Professional highlights"></div>
-    </section>
-
-    <section class="section" id="capabilities">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Capabilities</p>
-        <h2>A toolkit shaped by the full software lifecycle.</h2>
-        <p>Rather than treating each role as separate, I bring the perspectives together: analyst, tester, developer, support specialist and engineer.</p>
-      </div>
-
-      <div class="capability-grid">
-        <article class="capability-card reveal">
-          <div class="capability-icon">♡</div>
-          <h3>Systems & Business Analysis</h3>
-          <ul>
-            <li>Requirements and functional analysis</li>
-            <li>Business process analysis</li>
-            <li>Data flow and solution design</li>
-            <li>Functional specifications</li>
-            <li>Stakeholder engagement</li>
-          </ul>
-        </article>
-        <article class="capability-card reveal">
-          <div class="capability-icon">♡</div>
-          <h3>Software Quality</h3>
-          <ul>
-            <li>Test automation</li>
-            <li>Regression and system testing</li>
-            <li>Integration and API testing</li>
-            <li>Acceptance testing</li>
-            <li>Defect management and reporting</li>
-          </ul>
-        </article>
-        <article class="capability-card reveal">
-          <div class="capability-icon">♡</div>
-          <h3>Technical Delivery</h3>
-          <ul>
-            <li>Python, JavaScript, SQL and Bash</li>
-            <li>PostgreSQL</li>
-            <li>REST APIs and Git</li>
-            <li>Robot Framework and DevExpress</li>
-            <li>Low-code process configuration</li>
-          </ul>
-        </article>
-        <article class="capability-card reveal">
-          <div class="capability-icon">♡</div>
-          <h3>Operations & Platforms</h3>
-          <ul>
-            <li>Production support</li>
-            <li>Incident and root cause analysis</li>
-            <li>Deployment and release support</li>
-            <li>Telecommunications platforms</li>
-            <li>IoT and M2M systems</li>
-          </ul>
-        </article>
-      </div>
-      <div class="hero-meta" aria-label="Professional highlights"></div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="about-card reveal">
-        <div>
-          <p class="eyebrow">About Mmasechaba Francesca</p>
-          <h2>Engineer by training. Systems thinker by practice.</h2>
-          <p class="about-copy">My background is deliberately multidisciplinary. Mechanical and mechatronic engineering taught me to think in systems. Software development and quality work taught me how systems fail in practice. Technical analysis taught me how to connect business intent, technical detail and delivery reality.</p>
-          <p class="about-copy">I am currently pursuing a Master of Commerce in Information Systems, with research focused on Software Quality Assurance as a Critical Success Factor influencing Agile project success.</p>
-        </div>
-        <div class="about-aside">
-          <div class="aside-block">
-            <span>Certification</span>
-            <strong>ISTQB® Certified Tester Foundation Level</strong>
-          </div>
-          <div class="aside-block">
-            <span>Professional status</span>
-            <strong>ECSA Candidate Engineer (Computer)</strong>
-          </div>
-          <div class="aside-block">
-            <span>Research focus</span>
-            <strong>Software quality, Agile delivery and testing practices</strong>
-          </div>
+      <div class="ticker" aria-label="Core skills">
+        <div class="ticker-track">
+          <span>SQL</span><b>✦</b><span>Systems analysis</span><b>✦</b><span>Software quality</span><b>✦</b><span>REST APIs</span><b>✦</b><span>Production support</span><b>✦</b><span>Agile delivery</span><b>✦</b>
+          <span aria-hidden="true">SQL</span><b aria-hidden="true">✦</b><span aria-hidden="true">Systems analysis</span><b aria-hidden="true">✦</b><span aria-hidden="true">Software quality</span><b aria-hidden="true">✦</b><span aria-hidden="true">REST APIs</span><b aria-hidden="true">✦</b><span aria-hidden="true">Production support</span><b aria-hidden="true">✦</b><span aria-hidden="true">Agile delivery</span><b aria-hidden="true">✦</b>
         </div>
       </div>
 
-      <div class="education-grid reveal" aria-label="Education">
-        <article class="education-card">
-          <span>2025 — Present</span>
-          <h3>Master of Commerce</h3>
-          <p>Information Systems</p>
-          <small>University of Cape Town</small>
-        </article>
-        <article class="education-card">
-          <span>2023 — 2024</span>
-          <h3>Postgraduate Diploma</h3>
-          <p>Disability Studies</p>
-          <small>University of Cape Town</small>
-        </article>
-        <article class="education-card">
-          <span>2017 — 2022</span>
-          <h3>Bachelor of Science</h3>
-          <p>Mechanical & Mechatronic Engineering</p>
-          <small>University of Cape Town</small>
-        </article>
-      </div>
-      <div class="hero-meta" aria-label="Professional highlights"></div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="contact-card reveal">
-        <span class="contact-flower contact-flower--left" aria-hidden="true">✿  ♡</span>
-        <span class="contact-flower contact-flower--right" aria-hidden="true">♡  ❀</span>
-        <p class="eyebrow">Get in touch</p>
-        <h2>Let’s make the complicated clearer.</h2>
-        <p>I’m interested in work that combines systems analysis, technical problem-solving, software quality, stakeholder collaboration and reliable delivery.</p>
-        <div class="hero-actions contact-actions">
-          <a class="button button--primary" href="mailto:chabi.seopa@gmail.com">Email me</a>
-          <a class="button button--secondary" href="https://linkedin.com/in/chabi-seopa" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="button button--secondary" href="https://github.com/charbileigh" target="_blank" rel="noreferrer">GitHub</a>
+      <section class="case-section section-shell" id="case-files" aria-labelledby="cases-title">
+        <div class="section-heading">
+          <p class="section-number">01 / CASE FILES</p>
+          <h2 id="cases-title">Work samples, minus the confidential company secrets.</h2>
+          <p>Representative problems I solve. The details are anonymised; the thinking is very real.</p>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <footer>
-    <p>© <span id="year"></span> Mmasechaba Francesca Seopa</p>
-    <p>I make systems make sense and a little prettier too (๑ᵔ⤙ᵔ๑)</p>
-    <p>Johannesburg, South Africa</p>
-  </footer>
+        <div class="case-grid">
+          <article class="case-card case-card-featured">
+            <div class="case-meta"><span>CASE 001</span><span>Requirements + Agile</span></div>
+            <h3>The user story that arrived with vibes instead of rules.</h3>
+            <p class="case-lede">An ambiguous requirement was producing repeated questions and avoidable delivery risk.</p>
+            <div class="case-flow" aria-label="Case summary">
+              <div><span>01</span><strong>Trace</strong><p>Mapped the expected behaviour, business rules and edge cases.</p></div>
+              <div><span>02</span><strong>Translate</strong><p>Turned ambiguity into functional detail and testable acceptance criteria.</p></div>
+              <div><span>03</span><strong>Align</strong><p>Built a shared understanding before implementation began.</p></div>
+            </div>
+            <details>
+              <summary>Open the file <span aria-hidden="true">↘</span></summary>
+              <p><strong>Result:</strong> fewer avoidable questions during development and a clearer route from business intent to working software.</p>
+            </details>
+          </article>
 
-  <script src="script.js"></script>
-</body>
+          <article class="case-card case-card-dark">
+            <div class="case-meta"><span>CASE 002</span><span>Incident analysis</span></div>
+            <h3>A production gremlin with excellent hiding skills.</h3>
+            <p>Traced system behaviour across data, application logic and dependencies; reproduced the issue and narrowed the root cause with delivery teams.</p>
+            <ul class="mini-list"><li>SQL inspection</li><li>Defect reproduction</li><li>Impact assessment</li></ul>
+            <details>
+              <summary>What changed? <span aria-hidden="true">↘</span></summary>
+              <p>Uncertainty became a targeted resolution path, with the right technical evidence in front of the right people.</p>
+            </details>
+          </article>
+
+          <article class="case-card case-card-yellow">
+            <div class="case-meta"><span>CASE 003</span><span>Quality + Automation</span></div>
+            <h3>Making releases feel less like a trust exercise.</h3>
+            <p>Built and maintained automated tests, validated APIs and databases, and supported end-to-end testing and release verification.</p>
+            <ul class="mini-list"><li>Robot Framework</li><li>API + database checks</li><li>Regression coverage</li></ul>
+            <details>
+              <summary>What changed? <span aria-hidden="true">↘</span></summary>
+              <p>Broader coverage, less repetitive manual effort and stronger confidence in production releases.</p>
+            </details>
+          </article>
+        </div>
+      </section>
+
+      <section class="changelog-section" id="changelog" aria-labelledby="changelog-title">
+        <div class="section-shell changelog-layout">
+          <div class="section-heading sticky-heading">
+            <p class="section-number">02 / CHANGELOG</p>
+            <h2 id="changelog-title">A career with range. And a suspicious amount of troubleshooting.</h2>
+            <p>Each role added another view of how systems are designed, shipped, tested and supported.</p>
+          </div>
+
+          <div class="changelog-list">
+            <article class="log-entry current">
+              <div class="log-version">v2026.03</div>
+              <div><p class="log-date">Mar 2026 — present</p><h3>Technical Systems Analyst</h3><p class="company">Digitata Networks</p><p>Requirements, workflow and solution design, functional documentation, production investigation, releases, integrations and Agile delivery.</p></div>
+              <span class="current-tag">Current build</span>
+            </article>
+            <article class="log-entry">
+              <div class="log-version">v2023.01</div>
+              <div><p class="log-date">Jan 2023 — Mar 2026</p><h3>Configuration Engineer</h3><p class="company">Digitata Networks</p><p>Telecommunications and IoT platform configuration, automated testing, API and database validation, defect investigation and deployment support.</p></div>
+            </article>
+            <article class="log-entry">
+              <div class="log-version">v2022.11</div>
+              <div><p class="log-date">Nov 2022 — Jan 2023</p><h3>Junior Software Developer</h3><p class="company">Digitata Networks</p><p>Enterprise software maintenance, SQL, debugging, testing and delivery collaboration.</p></div>
+            </article>
+            <article class="log-entry">
+              <div class="log-version">v2022.06</div>
+              <div><p class="log-date">2022</p><h3>Graduate Engineer — IoT/M2M Platforms &amp; Cybersecurity</h3><p class="company">MTN South Africa</p><p>Platform operations, telecommunications troubleshooting, monitoring, reporting and service assurance.</p></div>
+            </article>
+            <article class="log-entry">
+              <div class="log-version">v2021.12</div>
+              <div><p class="log-date">Dec 2021 — May 2022</p><h3>Junior Full Stack Developer</h3><p class="company">MethodData</p><p>Frontend, backend, APIs, databases, debugging, testing and deployment in an Agile environment.</p></div>
+            </article>
+            <details class="older-roles">
+              <summary>Load two earlier versions <span aria-hidden="true">+</span></summary>
+              <article class="log-entry compact">
+                <div class="log-version">v2021.07</div>
+                <div><p class="log-date">Jul — Nov 2021</p><h3>New Venture Support Intern</h3><p class="company">UCT Research Contracts &amp; Innovation</p></div>
+              </article>
+              <article class="log-entry compact">
+                <div class="log-version">v2019.06</div>
+                <div><p class="log-date">Jun — Jul 2019</p><h3>Asset Care Engineering Intern</h3><p class="company">Pragma Global</p></div>
+              </article>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="toolbox-section section-shell" id="toolbox" aria-labelledby="toolbox-title">
+        <div class="section-heading toolbox-heading">
+          <p class="section-number">03 / TOOLBOX</p>
+          <h2 id="toolbox-title">Several hats. None of them decorative.</h2>
+        </div>
+        <div class="toolbox-grid">
+          <article>
+            <span class="toolbox-index">A</span>
+            <h3>Analyse</h3>
+            <p>Requirements, business rules, process mapping, data flows, functional specifications and stakeholder conversations.</p>
+          </article>
+          <article>
+            <span class="toolbox-index">B</span>
+            <h3>Build &amp; configure</h3>
+            <p>Python, JavaScript, SQL, Bash, PostgreSQL, MariaDB, REST APIs, DevExpress and low-code configuration.</p>
+          </article>
+          <article>
+            <span class="toolbox-index">C</span>
+            <h3>Test</h3>
+            <p>Robot Framework, functional, integration, regression, system, API, database and acceptance testing.</p>
+          </article>
+          <article>
+            <span class="toolbox-index">D</span>
+            <h3>Keep it alive</h3>
+            <p>Production support, root cause analysis, incident triage, release support, telecoms, IoT and M2M platforms.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="section-shell about-grid">
+          <div class="about-copy">
+            <p class="section-number">04 / HUMAN README</p>
+            <h2 id="about-title">Engineer by training. Systems thinker by repeated exposure to reality.</h2>
+            <p>Mechanical and mechatronic engineering taught me to see connected parts. Software work taught me where those parts misbehave. Systems analysis lets me connect business intent, technical detail and delivery reality.</p>
+            <p>I’m also completing an MCom in Information Systems, researching how software quality assurance contributes to Agile project success. Yes, I professionally think about testing and then go home and think about testing.</p>
+          </div>
+          <div class="spec-sheet" aria-label="Qualifications and professional details">
+            <div><span>Currently studying</span><strong>MCom Information Systems</strong><small>University of Cape Town</small></div>
+            <div><span>First degree</span><strong>BSc Mechanical &amp; Mechatronic Engineering</strong><small>University of Cape Town</small></div>
+            <div><span>Certification</span><strong>ISTQB® CTFL</strong><small>Software testing, officially</small></div>
+            <div><span>Professional status</span><strong>ECSA Candidate Engineer (Computer)</strong><small>Engineering, continuously</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" aria-labelledby="contact-title">
+        <div class="contact-orbit" aria-hidden="true">CHABI / CHABI / CHABI /</div>
+        <div class="section-shell contact-inner">
+          <p class="section-number">05 / SEND A SIGNAL</p>
+          <h2 id="contact-title">Found a messy system?<br /><em>Delicious.</em></h2>
+          <p>I’m interested in work that combines analysis, technical problem-solving, software quality and reliable delivery.</p>
+          <div class="contact-links">
+            <a href="mailto:chabi.seopa@gmail.com">Email me <span>↗</span></a>
+            <a href="https://linkedin.com/in/chabi-seopa" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+            <a href="https://github.com/charbileigh" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Mmasechaba Francesca Seopa</p>
+      <button class="pink-switch" type="button" aria-pressed="false">Make it pinker</button>
+      <p>Designed with systems thinking and a highly defensible amount of pink.</p>
+    </footer>
+  </body>
 </html>
