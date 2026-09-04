@@ -243,6 +243,49 @@
       </section>
     </main>
 
+    <aside class="chabi-chatbot" aria-label="Ask about Mmasechaba Francesca Seopa">
+      <section class="chat-panel" id="chabi-chat-panel" role="dialog" aria-labelledby="chat-title" hidden>
+        <header class="chat-header">
+          <div class="chat-identity">
+            <img src="images/pink-chat-pet.png" alt="" width="48" height="48" />
+            <div>
+              <p id="chat-title">CHABI_BOT.exe</p>
+              <span><i aria-hidden="true"></i> Ask me about Mmasechaba</span>
+            </div>
+          </div>
+          <button class="chat-close" type="button" aria-label="Close chatbot">×</button>
+        </header>
+
+        <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-relevant="additions">
+          <div class="chat-message bot-message">
+            <img src="images/pink-chat-pet.png" alt="" width="34" height="34" />
+            <p>Hi! I’m Chabi’s tiny portfolio helper. Ask me about her experience, skills, education or research.</p>
+          </div>
+        </div>
+
+        <div class="chat-suggestions" aria-label="Suggested questions">
+          <button type="button" data-chat-question="What does Chabi do?">What does Chabi do?</button>
+          <button type="button" data-chat-question="What are her skills?">Her skills</button>
+          <button type="button" data-chat-question="What is she studying?">Her research</button>
+        </div>
+
+        <form class="chat-form" id="chat-form" autocomplete="off">
+          <label class="visually-hidden" for="chat-input">Ask a question about Mmasechaba Francesca Seopa</label>
+          <input id="chat-input" name="question" type="text" maxlength="220" placeholder="Ask something about Chabi…" required />
+          <button type="submit">Send</button>
+        </form>
+        <p class="chat-note">Answers are limited to verified portfolio information.</p>
+      </section>
+
+      <button class="chat-launcher" type="button" aria-expanded="false" aria-controls="chabi-chat-panel" aria-label="Open chatbot about Mmasechaba">
+        <span class="chat-launcher-label">Ask about Chabi</span>
+        <span class="chat-pet-shell" aria-hidden="true">
+          <img src="images/pink-chat-pet.png" alt="" width="82" height="82" />
+          <i></i>
+        </span>
+      </button>
+    </aside>
+
     <footer>
       <p>© 2026 Mmasechaba Francesca Seopa</p>
       <button class="pink-switch" type="button" aria-pressed="false">Make it pinker</button>
