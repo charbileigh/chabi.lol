@@ -1700,3 +1700,42 @@ footer p:last-child {
 .showcase-section a:focus-visible { outline:3px solid var(--deep-pink); outline-offset:5px; }
 @media(max-width:1100px) { .site-header>nav:not(.mobile-menu) a { padding-left:10px; padding-right:10px; } }
 @media(max-width:760px) { .showcase-heading,.showcase-grid { grid-template-columns:1fr; } .showcase-heading { gap:20px; } .showcase-section { padding-top:48px; padding-bottom:56px; } .showcase-copy { padding:22px; } }
+
+/* Header pink-mode toggle */
+.site-header .pink-switch {
+  flex: 0 0 auto;
+  margin: 10px 12px;
+  padding: 10px 12px;
+  min-height: 44px;
+  border: 2px solid var(--ink);
+  background: var(--soft-pink);
+  color: var(--ink);
+  font-size: .875rem;
+  line-height: 1.25;
+}
+.site-header .pink-switch:hover,
+.site-header .pink-switch[aria-pressed="true"] { background: var(--pink); }
+.site-header .pink-switch:focus-visible { outline: 3px solid #3670ff; outline-offset: 3px; }
+.site-header .mobile-menu { top: 100%; }
+@media (max-width: 1240px) {
+  .site-header > nav:not(.mobile-menu) { display: none; }
+  .site-header .wordmark { margin-right: auto; min-width: 0; }
+  .site-header .menu-button {
+    display: block; align-self: stretch; padding: 0 16px;
+    border: 0; border-left: 2px solid var(--ink); background: var(--pink);
+    color: var(--ink); cursor: pointer; font-family: var(--mono); font-size: .875rem; font-weight: 900;
+  }
+  .site-header .mobile-menu {
+    position: absolute; right: 0; left: 0; flex-direction: column;
+    border-bottom: 3px solid var(--ink); background: var(--paper);
+  }
+  .site-header .mobile-menu:not([hidden]) { display: flex; }
+  .site-header .mobile-menu a { padding: 16px 22px; border-bottom: 1px solid #cdb0bf; font-family: var(--mono); font-size: .875rem; text-decoration: none; }
+}
+@media (max-width: 600px) {
+  .site-header { flex-wrap: wrap; }
+  .site-header .wordmark { width: 100%; min-height: 48px; border-bottom: 1px solid var(--ink); border-right: 0; }
+  .site-header .pink-switch { margin: 8px 12px; }
+  .site-header .menu-button { margin-left: auto; min-height: 60px; }
+  html { scroll-padding-top: 132px; }
+}
