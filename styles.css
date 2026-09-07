@@ -1674,3 +1674,29 @@ footer p:last-child {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Selected projects */
+.showcase-section { padding-top: 72px; padding-bottom: 88px; }
+.showcase-heading { display:grid; grid-template-columns:1.2fr 1fr; gap:40px; align-items:end; margin-bottom:32px; }
+.showcase-heading h2 { font-family:var(--serif); font-size:clamp(1.8rem,3.8vw,2.8rem); line-height:1.15; margin-bottom:0; max-width:650px; }
+.showcase-heading>p { margin:0; max-width:480px; }
+.showcase-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; }
+.showcase-card { border:2px solid var(--ink); background:var(--paper); box-shadow:5px 5px 0 var(--ink); min-width:0; display:flex; flex-direction:column; }
+.showcase-cover { display:block; border-bottom:2px solid var(--ink); overflow:hidden; }
+.showcase-cover img { display:block; width:100%; height:auto; aspect-ratio:12/7; object-fit:cover; }
+.showcase-copy { padding:26px; display:flex; flex-direction:column; flex:1; }
+.showcase-kind { font-family:var(--mono); font-size:.875rem; margin:0 0 8px; }
+.showcase-copy h3 { font-family:var(--serif); font-size:1.75rem; line-height:1.2; margin-bottom:14px; }
+.showcase-copy>p { font-size:1rem; }
+.showcase-skills { padding-top:16px; border-top:1px solid #cdb0bf; }
+.showcase-skills strong { display:block; font-size:.875rem; margin-bottom:6px; }
+.showcase-tags { display:flex; flex-wrap:wrap; gap:7px; list-style:none; padding:0; margin:0 0 25px; }
+.showcase-tags li { border:1px solid var(--ink); padding:3px 9px; font-family:var(--mono); font-size:.875rem; background:var(--paper-2); }
+.showcase-links { display:flex; align-items:center; flex-wrap:wrap; gap:22px; margin-top:auto; }
+.showcase-links a { font-size:1rem; font-weight:700; text-underline-offset:4px; }
+.showcase-links a:first-child { background:var(--soft-pink); padding:10px 14px; border:1px solid var(--ink); text-decoration:none; }
+.showcase-links a:hover { text-decoration:underline; }
+.showcase-section a:focus-visible { outline:3px solid var(--deep-pink); outline-offset:5px; }
+@media(max-width:1100px) { .site-header>nav:not(.mobile-menu) a { padding-left:10px; padding-right:10px; } }
+@media(max-width:760px) { .showcase-heading,.showcase-grid { grid-template-columns:1fr; } .showcase-heading { gap:20px; } .showcase-section { padding-top:48px; padding-bottom:56px; } .showcase-copy { padding:22px; } }
