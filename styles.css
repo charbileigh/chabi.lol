@@ -1690,39 +1690,44 @@ footer p:last-child {
   display: grid;
   aspect-ratio: 12 / 7;
   place-items: center;
-  background: linear-gradient(155deg, var(--paper) 0%, var(--paper-2) 33%, var(--soft-pink) 68%, var(--pink) 100%);
+  background:
+    radial-gradient(circle at 50% 42%, rgba(255, 255, 255, 0.72) 0 18%, transparent 19%),
+    linear-gradient(155deg, var(--paper) 0%, var(--paper-2) 26%, var(--soft-pink) 62%, var(--pink) 100%);
   text-decoration: none;
 }
 .bear-art-cover::before {
   position: absolute;
-  width: 72%;
+  width: 82%;
   aspect-ratio: 1;
-  border: 1px solid rgba(36, 19, 30, 0.22);
+  border: 2px solid rgba(36, 19, 30, 0.2);
   border-radius: 50%;
+  box-shadow: 0 0 0 18px rgba(255, 248, 252, 0.16);
   content: "";
+  animation: bear-art-pulse 3.6s ease-in-out infinite;
 }
 .bear-art-frame {
   position: relative;
   display: block;
-  width: min(47%, 260px);
+  width: min(64%, 350px);
   aspect-ratio: 9 / 8;
   border: 2px solid var(--ink);
   border-radius: 25%;
   background: var(--soft-pink);
-  box-shadow: 7px 7px 0 var(--deep-pink);
+  box-shadow: 9px 9px 0 var(--deep-pink);
+  animation: bear-art-float 3.6s ease-in-out infinite;
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 .bear-art-cover:hover .bear-art-frame,
 .bear-art-cover:focus-visible .bear-art-frame {
-  box-shadow: 4px 4px 0 var(--deep-pink);
-  transform: translate(3px, 3px) rotate(-1.5deg);
+  box-shadow: 6px 6px 0 var(--deep-pink);
+  transform: translate(3px, 3px) rotate(-1.5deg) scale(1.02);
 }
 .bear-art-head {
   position: absolute;
-  top: 12.5%;
+  top: 10%;
   left: 50%;
-  width: 53.333%;
-  height: 75%;
+  width: 60%;
+  height: 78%;
   border-radius: 37.5% 37.5% 0 0;
   background: var(--paper);
   transform: translateX(-50%);
@@ -1738,11 +1743,11 @@ footer p:last-child {
 .bear-art-ear {
   position: absolute;
   top: 0;
-  width: 41.667%;
+  width: 38%;
   aspect-ratio: 1;
-  border: clamp(5px, 0.75vw, 9px) solid var(--paper);
+  border: clamp(6px, 0.85vw, 11px) solid var(--paper);
   border-radius: 50%;
-  background: var(--paper-2);
+  background: var(--soft-pink);
   transition: background-color 280ms ease, border-color 280ms ease;
 }
 .bear-art-ear-left { left: -15%; }
@@ -1751,12 +1756,12 @@ footer p:last-child {
   position: absolute;
   z-index: 2;
   top: 25%;
-  width: 10%;
+  width: 11%;
   aspect-ratio: 1;
   border-radius: 50%;
   background: var(--ink);
   transform-origin: center;
-  animation: bear-art-blink 3s infinite 1s;
+  animation: bear-art-blink 2.8s infinite 0.45s;
 }
 .bear-art-eye-left { left: 25%; }
 .bear-art-eye-right { right: 25%; }
@@ -1798,8 +1803,16 @@ footer p:last-child {
   background: var(--ink);
 }
 @keyframes bear-art-blink {
-  0%, 4%, 10%, 19%, 26%, 100% { transform: scaleY(1); }
-  5%, 9%, 20%, 25% { transform: scaleY(0.1); }
+  0%, 6%, 14%, 24%, 33%, 100% { transform: scaleY(1); }
+  8%, 12%, 26%, 31% { transform: scaleY(0.08); }
+}
+@keyframes bear-art-float {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -7px; }
+}
+@keyframes bear-art-pulse {
+  0%, 100% { opacity: 0.58; transform: scale(0.96); }
+  50% { opacity: 1; transform: scale(1.03); }
 }
 .showcase-copy { padding:26px; display:flex; flex-direction:column; flex:1; }
 .showcase-kind { font-family:var(--mono); font-size:.875rem; margin:0 0 8px; }
@@ -1815,7 +1828,7 @@ footer p:last-child {
 .showcase-links a:hover { text-decoration:underline; }
 .showcase-section a:focus-visible { outline:3px solid var(--deep-pink); outline-offset:5px; }
 @media(max-width:1100px) { .site-header>nav:not(.mobile-menu) a { padding-left:10px; padding-right:10px; } }
-@media(max-width:760px) { .showcase-heading,.showcase-grid { grid-template-columns:1fr; } .showcase-heading { gap:20px; } .showcase-section { padding-top:48px; padding-bottom:56px; } .showcase-copy { padding:22px; } }
+@media(max-width:760px) { .showcase-heading,.showcase-grid { grid-template-columns:1fr; } .showcase-heading { gap:20px; } .showcase-section { padding-top:48px; padding-bottom:56px; } .showcase-copy { padding:22px; } .bear-art-frame { width:min(72%, 340px); } }
 
 /* Header pink-mode toggle */
 .site-header .pink-switch {
