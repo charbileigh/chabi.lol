@@ -287,3 +287,20 @@ document.addEventListener("keydown", (event) => {
 
 window.getChabiReply = getChabiReply;
 
+const c3AnimationShell = document.querySelector("[data-c3-animation]");
+
+if (c3AnimationShell) {
+  const sizeC3Animation = () => {
+    const scale = Math.min(1, c3AnimationShell.clientWidth / 800);
+    c3AnimationShell.style.setProperty("--c3-scale", scale.toFixed(4));
+  };
+
+  sizeC3Animation();
+
+  if ("ResizeObserver" in window) {
+    const c3ResizeObserver = new ResizeObserver(sizeC3Animation);
+    c3ResizeObserver.observe(c3AnimationShell);
+  } else {
+    window.addEventListener("resize", sizeC3Animation);
+  }
+}
