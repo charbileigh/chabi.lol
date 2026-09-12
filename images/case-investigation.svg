@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Cross-system production investigation</title>
+  <desc id="desc">A magnifying glass traces an issue through user interface, API and database layers.</desc>
+  <rect width="1200" height="700" fill="#24131e"/>
+  <circle cx="1090" cy="80" r="220" fill="#ff4fa3" opacity=".16"/>
+  <circle cx="80" cy="650" r="250" fill="#ffc5df" opacity=".09"/>
+  <rect x="58" y="52" width="1084" height="596" rx="20" fill="#fff8fc" stroke="#ff4fa3" stroke-width="6"/>
+  <rect x="58" y="52" width="1084" height="74" rx="20" fill="#9b1757"/>
+  <path d="M58 105h1084" stroke="#24131e" stroke-width="5"/>
+  <circle cx="105" cy="88" r="11" fill="#fff8fc" stroke="#24131e" stroke-width="4"/>
+  <circle cx="145" cy="88" r="11" fill="#fff067" stroke="#24131e" stroke-width="4"/>
+  <circle cx="185" cy="88" r="11" fill="#ff4fa3" stroke="#24131e" stroke-width="4"/>
+  <text x="600" y="96" text-anchor="middle" fill="#fff8fc" font-family="ui-monospace, monospace" font-size="25" font-weight="900">CASE_02 / INVESTIGATION</text>
+  <g font-family="ui-monospace, monospace" font-size="23" font-weight="900" text-anchor="middle">
+    <rect x="112" y="201" width="246" height="138" rx="16" fill="#ffc5df" stroke="#24131e" stroke-width="5"/>
+    <text x="235" y="259" fill="#24131e">USER INTERFACE</text><text x="235" y="299" fill="#9b1757" font-size="17">REPRODUCE</text>
+    <rect x="477" y="201" width="246" height="138" rx="16" fill="#fff067" stroke="#24131e" stroke-width="5"/>
+    <text x="600" y="259" fill="#24131e">REST API</text><text x="600" y="299" fill="#9b1757" font-size="17">TRACE REQUEST</text>
+    <rect x="842" y="201" width="246" height="138" rx="16" fill="#ff4fa3" stroke="#24131e" stroke-width="5"/>
+    <text x="965" y="259" fill="#24131e">DATABASE</text><text x="965" y="299" fill="#24131e" font-size="17">CHECK DATA</text>
+  </g>
+  <path d="M358 270h119M723 270h119" stroke="#24131e" stroke-width="7"/>
+  <path d="m455 246 28 24-28 24M820 246l28 24-28 24" fill="none" stroke="#24131e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(365 338)">
+    <circle cx="190" cy="112" r="100" fill="#ffeaf4" stroke="#24131e" stroke-width="12"/>
+    <circle cx="190" cy="112" r="64" fill="none" stroke="#ed177f" stroke-width="8" stroke-dasharray="14 13"/>
+    <path d="m261 183 105 105" stroke="#24131e" stroke-width="27" stroke-linecap="round"/>
+    <path d="m261 183 105 105" stroke="#ff4fa3" stroke-width="13" stroke-linecap="round"/>
+    <path d="m160 111 23 24 46-57" fill="none" stroke="#9b1757" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <rect x="755" y="402" width="306" height="125" rx="14" fill="#24131e"/>
+  <text x="908" y="449" text-anchor="middle" fill="#ff4fa3" font-family="ui-monospace, monospace" font-size="19" font-weight="900">EVIDENCE FOUND</text>
+  <text x="908" y="491" text-anchor="middle" fill="#fff8fc" font-family="Georgia, serif" font-size="29">Smaller problem.</text>
+  <rect x="132" y="545" width="936" height="62" rx="12" fill="#24131e"/>
+  <text x="600" y="585" text-anchor="middle" fill="#fff8fc" font-family="ui-monospace, monospace" font-size="22" font-weight="900">REPRODUCE → TRACE → COMPARE → ISOLATE</text>
+</svg>
