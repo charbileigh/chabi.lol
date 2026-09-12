@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Requirements to configured workflow</title>
+  <desc id="desc">An unclear request is organised into rules, a workflow and testable acceptance criteria.</desc>
+  <rect width="1200" height="700" fill="#ffeaf4"/>
+  <path d="M0 70H1200M0 140H1200M0 210H1200M0 280H1200M0 350H1200M0 420H1200M0 490H1200M0 560H1200M0 630H1200M100 0V700M200 0V700M300 0V700M400 0V700M500 0V700M600 0V700M700 0V700M800 0V700M900 0V700M1000 0V700M1100 0V700" stroke="#ed177f" stroke-opacity=".08" stroke-width="2"/>
+  <rect x="58" y="52" width="1084" height="596" rx="20" fill="#fff8fc" stroke="#24131e" stroke-width="5"/>
+  <rect x="58" y="52" width="1084" height="74" rx="20" fill="#ff4fa3"/>
+  <path d="M58 105h1084" stroke="#24131e" stroke-width="5"/>
+  <circle cx="105" cy="88" r="11" fill="#fff8fc" stroke="#24131e" stroke-width="4"/>
+  <circle cx="145" cy="88" r="11" fill="#fff067" stroke="#24131e" stroke-width="4"/>
+  <circle cx="185" cy="88" r="11" fill="#9b1757" stroke="#24131e" stroke-width="4"/>
+  <text x="600" y="96" text-anchor="middle" fill="#24131e" font-family="ui-monospace, monospace" font-size="25" font-weight="900">CASE_01 / REQUIREMENTS</text>
+  <g transform="translate(100 190)">
+    <rect width="250" height="270" rx="14" fill="#ffc5df" stroke="#24131e" stroke-width="5" transform="rotate(-2 125 135)"/>
+    <text x="34" y="64" fill="#24131e" font-family="Georgia, serif" font-size="34" font-style="italic">“Can we make</text>
+    <text x="34" y="105" fill="#24131e" font-family="Georgia, serif" font-size="34" font-style="italic">this easier?”</text>
+    <path d="M34 154h174M34 190h136M34 226h189" stroke="#9b1757" stroke-width="14" stroke-linecap="round" opacity=".35"/>
+  </g>
+  <path d="M377 325h100" stroke="#24131e" stroke-width="8" stroke-linecap="round"/>
+  <path d="m454 298 34 27-34 27" fill="none" stroke="#24131e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(500 176)">
+    <rect width="270" height="300" rx="14" fill="#fff067" stroke="#24131e" stroke-width="5"/>
+    <text x="30" y="55" fill="#24131e" font-family="ui-monospace, monospace" font-size="20" font-weight="900">RULES + EXCEPTIONS</text>
+    <rect x="30" y="84" width="210" height="52" rx="8" fill="#fff8fc" stroke="#24131e" stroke-width="3"/>
+    <rect x="30" y="155" width="210" height="52" rx="8" fill="#fff8fc" stroke="#24131e" stroke-width="3"/>
+    <rect x="30" y="226" width="210" height="42" rx="21" fill="#ff4fa3" stroke="#24131e" stroke-width="3"/>
+    <text x="135" y="254" text-anchor="middle" fill="#24131e" font-family="ui-monospace, monospace" font-size="18" font-weight="900">TESTABLE</text>
+  </g>
+  <path d="M797 325h75" stroke="#24131e" stroke-width="8" stroke-linecap="round"/>
+  <path d="m850 298 34 27-34 27" fill="none" stroke="#24131e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(895 176)">
+    <rect width="205" height="300" rx="14" fill="#24131e" stroke="#24131e" stroke-width="5"/>
+    <circle cx="102" cy="80" r="38" fill="#ff4fa3"/>
+    <path d="m82 80 15 15 31-38" fill="none" stroke="#24131e" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="102" y="157" text-anchor="middle" fill="#fff8fc" font-family="Georgia, serif" font-size="30">Workflow</text>
+    <text x="102" y="195" text-anchor="middle" fill="#fff8fc" font-family="Georgia, serif" font-size="30">ready</text>
+    <rect x="35" y="228" width="135" height="39" rx="19" fill="#ffc5df"/>
+    <text x="102" y="254" text-anchor="middle" fill="#24131e" font-family="ui-monospace, monospace" font-size="16" font-weight="900">CONFIGURE</text>
+  </g>
+  <text x="600" y="570" text-anchor="middle" fill="#9b1757" font-family="ui-monospace, monospace" font-size="22" font-weight="900">CLARIFY → MAP → DOCUMENT → VALIDATE</text>
+</svg>
