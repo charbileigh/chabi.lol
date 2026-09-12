@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Petal Trace requirements traceability board</title>
+  <desc id="desc">A pink system map linking a requirement to tests and a defect.</desc>
+  <rect width="1200" height="700" fill="#fff8fc"/>
+  <path d="M0 84H1200M0 168H1200M0 252H1200M0 336H1200M0 420H1200M0 504H1200M0 588H1200M100 0V700M200 0V700M300 0V700M400 0V700M500 0V700M600 0V700M700 0V700M800 0V700M900 0V700M1000 0V700M1100 0V700" stroke="#ed177f" stroke-opacity=".08" stroke-width="2"/>
+  <rect x="58" y="48" width="1084" height="604" rx="18" fill="#ffeaf4" stroke="#24131e" stroke-width="5"/>
+  <rect x="58" y="48" width="1084" height="76" rx="18" fill="#ff4fa3"/>
+  <path d="M58 105h1084" stroke="#24131e" stroke-width="5"/>
+  <circle cx="104" cy="86" r="12" fill="#fff8fc" stroke="#24131e" stroke-width="4"/>
+  <circle cx="146" cy="86" r="12" fill="#fff067" stroke="#24131e" stroke-width="4"/>
+  <circle cx="188" cy="86" r="12" fill="#9b1757" stroke="#24131e" stroke-width="4"/>
+  <text x="600" y="93" text-anchor="middle" fill="#24131e" font-family="ui-monospace, monospace" font-size="25" font-weight="800">PETAL_TRACE.exe</text>
+  <text x="110" y="182" fill="#9b1757" font-family="ui-monospace, monospace" font-size="20" font-weight="800">REQUIREMENT → TEST COVERAGE → DEFECT</text>
+  <path d="M370 344H490M710 344H830" stroke="#24131e" stroke-width="7"/>
+  <path d="m472 327 24 17-24 17M812 327l24 17-24 17" fill="none" stroke="#24131e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(100 235)">
+    <rect width="270" height="220" rx="12" fill="#fff" stroke="#24131e" stroke-width="5"/>
+    <rect width="270" height="54" rx="12" fill="#ffc5df"/>
+    <path d="M0 54H270" stroke="#24131e" stroke-width="5"/>
+    <text x="24" y="35" fill="#24131e" font-family="ui-monospace, monospace" font-size="18" font-weight="800">REQ-014</text>
+    <text x="24" y="96" fill="#24131e" font-family="Arial, sans-serif" font-size="24" font-weight="700">Customer sign-in</text>
+    <rect x="24" y="128" width="184" height="13" rx="6" fill="#9b1757" opacity=".25"/>
+    <rect x="24" y="156" width="220" height="13" rx="6" fill="#9b1757" opacity=".18"/>
+    <rect x="24" y="184" width="144" height="13" rx="6" fill="#9b1757" opacity=".18"/>
+  </g>
+  <g transform="translate(490 235)">
+    <rect width="220" height="220" rx="12" fill="#fff" stroke="#24131e" stroke-width="5"/>
+    <rect width="220" height="54" rx="12" fill="#fff067"/>
+    <path d="M0 54H220" stroke="#24131e" stroke-width="5"/>
+    <text x="24" y="35" fill="#24131e" font-family="ui-monospace, monospace" font-size="18" font-weight="800">TESTS</text>
+    <circle cx="43" cy="97" r="14" fill="#ff4fa3" stroke="#24131e" stroke-width="4"/>
+    <path d="m36 97 5 6 10-13" fill="none" stroke="#24131e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="70" y="105" fill="#24131e" font-family="Arial, sans-serif" font-size="21" font-weight="700">TC-021</text>
+    <circle cx="43" cy="151" r="14" fill="#ff4fa3" stroke="#24131e" stroke-width="4"/>
+    <path d="m36 151 5 6 10-13" fill="none" stroke="#24131e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="70" y="159" fill="#24131e" font-family="Arial, sans-serif" font-size="21" font-weight="700">TC-022</text>
+  </g>
+  <g transform="translate(830 235)">
+    <rect width="270" height="220" rx="12" fill="#fff" stroke="#24131e" stroke-width="5"/>
+    <rect width="270" height="54" rx="12" fill="#9b1757"/>
+    <path d="M0 54H270" stroke="#24131e" stroke-width="5"/>
+    <text x="24" y="35" fill="#fff8fc" font-family="ui-monospace, monospace" font-size="18" font-weight="800">DEFECT-006</text>
+    <text x="24" y="101" fill="#24131e" font-family="Arial, sans-serif" font-size="24" font-weight="700">Validation error</text>
+    <rect x="24" y="133" width="99" height="39" rx="19" fill="#ffc5df" stroke="#24131e" stroke-width="3"/>
+    <text x="73" y="159" text-anchor="middle" fill="#24131e" font-family="ui-monospace, monospace" font-size="16" font-weight="800">OPEN</text>
+  </g>
+  <rect x="100" y="516" width="1000" height="76" rx="12" fill="#24131e"/>
+  <text x="136" y="563" fill="#fff8fc" font-family="ui-monospace, monospace" font-size="22" font-weight="800">COVERAGE: 100%</text>
+  <text x="1064" y="563" text-anchor="end" fill="#ff4fa3" font-family="ui-monospace, monospace" font-size="22" font-weight="800">1 OPEN RISK</text>
+</svg>
