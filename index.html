@@ -10,10 +10,62 @@
     <meta name="theme-color" content="#ff4fa3" />
     <title>Mmasechaba Chabi Seopa</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script>
+      (() => {
+        try {
+          const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          const forceReplay = new URLSearchParams(window.location.search).get("intro") === "1";
+          const hasSeenIntro = window.sessionStorage.getItem("chabi-intro-seen") === "true";
+
+          if (!reducedMotion && (forceReplay || !hasSeenIntro)) {
+            document.documentElement.classList.add("intro-ready");
+            window.setTimeout(() => document.documentElement.classList.remove("intro-ready"), 5000);
+          }
+        } catch (error) {
+          // The portfolio remains available if storage or motion preferences cannot be read.
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div
+      class="site-intro"
+      data-site-intro
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="intro-title"
+      aria-describedby="intro-description"
+      aria-hidden="true"
+    >
+      <div class="intro-atmosphere" aria-hidden="true">
+        <span class="intro-orbit intro-orbit-one"></span>
+        <span class="intro-orbit intro-orbit-two"></span>
+        <span class="intro-spark intro-spark-one">✦</span>
+        <span class="intro-spark intro-spark-two">✦</span>
+        <span class="intro-spark intro-spark-three">✦</span>
+      </div>
+
+      <div class="intro-frame">
+        <div class="intro-meta" aria-hidden="true">
+          <span>PORTFOLIO / 2026</span>
+          <span>JOHANNESBURG, ZA</span>
+        </div>
+
+        <div class="intro-copy">
+          <p class="intro-kicker">Hello, I’m</p>
+          <h1 class="intro-title" id="intro-title" aria-label="Chabi">
+            <span style="--letter: 0">C</span><span style="--letter: 1">H</span><span style="--letter: 2">A</span><span style="--letter: 3">B</span><span style="--letter: 4">I</span><i aria-hidden="true">.</i>
+          </h1>
+          <p class="intro-description" id="intro-description">Systems, software &amp; thoughtful testing.</p>
+        </div>
+
+        <div class="intro-progress" aria-hidden="true"><span></span></div>
+        <button class="intro-skip" type="button" data-intro-skip>Skip intro <span aria-hidden="true">↗</span></button>
+      </div>
+    </div>
+
     <a class="skip-link" href="#main">Skip to the useful bit</a>
 
     <header class="site-header">

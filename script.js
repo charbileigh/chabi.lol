@@ -1,3 +1,58 @@
+const siteIntro = document.querySelector("[data-site-intro]");
+const introSkip = document.querySelector("[data-intro-skip]");
+
+if (siteIntro && document.documentElement.classList.contains("intro-ready")) {
+  const pageElements = [...document.body.children].filter((element) => element !== siteIntro && element.tagName !== "SCRIPT");
+  let introDismissed = false;
+
+  document.body.classList.add("intro-active");
+  siteIntro.hidden = false;
+  siteIntro.setAttribute("aria-hidden", "false");
+  pageElements.forEach((element) => {
+    element.inert = true;
+  });
+
+  const dismissIntro = (wasSkipped = false) => {
+    if (introDismissed) return;
+    introDismissed = true;
+    window.clearTimeout(autoDismissIntro);
+    siteIntro.classList.add("intro-leaving");
+
+    try {
+      window.sessionStorage.setItem("chabi-intro-seen", "true");
+    } catch (error) {
+      // A blocked storage API should never block access to the portfolio.
+    }
+
+    window.setTimeout(() => {
+      document.documentElement.classList.remove("intro-ready");
+      document.body.classList.remove("intro-active");
+      document.body.classList.add("intro-revealed");
+      siteIntro.hidden = true;
+      siteIntro.setAttribute("aria-hidden", "true");
+      pageElements.forEach((element) => {
+        element.inert = false;
+      });
+
+      if (wasSkipped) {
+        const main = document.querySelector("#main");
+        main.setAttribute("tabindex", "-1");
+        main.focus({ preventScroll: true });
+        main.addEventListener("blur", () => main.removeAttribute("tabindex"), { once: true });
+      }
+    }, 560);
+  };
+
+  const autoDismissIntro = window.setTimeout(() => dismissIntro(false), 2800);
+
+  introSkip.addEventListener("click", () => dismissIntro(true));
+  siteIntro.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") dismissIntro(true);
+  });
+
+  window.requestAnimationFrame(() => introSkip.focus({ preventScroll: true }));
+}
+
 const diagnostics = {
   requirements: {
     copy: "Find the missing rules, edge cases and assumptions—then turn them into something a team can actually build and test.",
