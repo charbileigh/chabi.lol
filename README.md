@@ -8,7 +8,11 @@ A playful, responsive one-page portfolio for Mmasechaba Francesca Seopa.
 
 - `index.html` — content and page structure
 - `styles.css` — the complete visual system and responsive layouts
-- `script.js` — the diagnostic switcher, mobile menu and pink-mode interaction
+- `script.js` — the intro sequence, diagnostic switcher, mobile menu and pink-mode interaction
+
+## Intro animation
+
+The opening sequence plays once per browser session, can be skipped immediately, and is bypassed when a visitor prefers reduced motion. Add `?intro=1` to the URL to replay it while reviewing the site.
 
 ## Run locally
 
