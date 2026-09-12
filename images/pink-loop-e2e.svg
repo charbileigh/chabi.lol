@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">PINK LOOP end-to-end test automation</title>
+  <desc id="desc">A pink browser test report with desktop, tablet and mobile coverage.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#24131e"/>
+      <stop offset="1" stop-color="#9b1757"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <circle cx="1070" cy="95" r="185" fill="#ff4fa3" opacity=".18"/>
+  <circle cx="125" cy="630" r="240" fill="#ffc5df" opacity=".12"/>
+  <rect x="70" y="55" width="1060" height="590" rx="20" fill="#fff8fc" stroke="#ff4fa3" stroke-width="6"/>
+  <rect x="70" y="55" width="1060" height="78" rx="20" fill="#ff4fa3"/>
+  <path d="M70 111h1060" stroke="#24131e" stroke-width="5"/>
+  <circle cx="114" cy="92" r="11" fill="#fff8fc" stroke="#24131e" stroke-width="4"/>
+  <circle cx="152" cy="92" r="11" fill="#fff067" stroke="#24131e" stroke-width="4"/>
+  <circle cx="190" cy="92" r="11" fill="#9b1757" stroke="#24131e" stroke-width="4"/>
+  <text x="600" y="101" text-anchor="middle" fill="#24131e" font-family="ui-monospace, monospace" font-size="26" font-weight="900">PINK_LOOP_E2E / TEST REPORT</text>
+  <g transform="translate(120 180)">
+    <text x="0" y="0" fill="#9b1757" font-family="ui-monospace, monospace" font-size="19" font-weight="900">PLAYWRIGHT · TYPESCRIPT · CI</text>
+    <text x="0" y="58" fill="#24131e" font-family="Georgia, serif" font-size="48">One journey.</text>
+    <text x="0" y="108" fill="#24131e" font-family="Georgia, serif" font-size="48" font-style="italic">Three viewports.</text>
+    <g transform="translate(0 160)" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#24131e">
+      <circle cx="17" cy="0" r="16" fill="#ff4fa3" stroke="#24131e" stroke-width="4"/><path d="m8 0 7 7L28-8" fill="none" stroke="#24131e" stroke-width="4" stroke-linecap="round"/><text x="50" y="8">Catalogue and search</text>
+      <circle cx="17" cy="58" r="16" fill="#ff4fa3" stroke="#24131e" stroke-width="4"/><path d="m8 58 7 7 13-15" fill="none" stroke="#24131e" stroke-width="4" stroke-linecap="round"/><text x="50" y="66">Cart and checkout</text>
+      <circle cx="17" cy="116" r="16" fill="#ff4fa3" stroke="#24131e" stroke-width="4"/><path d="m8 116 7 7 13-15" fill="none" stroke="#24131e" stroke-width="4" stroke-linecap="round"/><text x="50" y="124">Authentication and API</text>
+    </g>
+  </g>
+  <g transform="translate(650 188)" fill="none" stroke="#24131e" stroke-width="6">
+    <rect x="0" y="0" width="390" height="246" rx="16" fill="#ffeaf4"/>
+    <path d="M0 47h390"/>
+    <circle cx="28" cy="24" r="7" fill="#ff4fa3"/><circle cx="54" cy="24" r="7" fill="#fff067"/><circle cx="80" cy="24" r="7" fill="#9b1757"/>
+    <rect x="43" y="82" width="132" height="28" rx="6" fill="#ff4fa3"/>
+    <rect x="43" y="133" width="296" height="18" rx="6" fill="#ffc5df" stroke="none"/>
+    <rect x="43" y="171" width="239" height="18" rx="6" fill="#ffc5df" stroke="none"/>
+    <path d="m293 97 19 19 37-47" stroke="#9b1757" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="36" y="282" width="190" height="125" rx="13" fill="#ffc5df"/>
+    <path d="M36 314h190"/>
+    <rect x="259" y="265" width="102" height="177" rx="17" fill="#fff067"/>
+    <path d="M259 300h102"/>
+    <circle cx="310" cy="420" r="8" fill="#24131e"/>
+  </g>
+  <rect x="122" y="565" width="956" height="45" rx="22" fill="#24131e"/>
+  <text x="600" y="595" text-anchor="middle" fill="#fff8fc" font-family="ui-monospace, monospace" font-size="20" font-weight="900">DESKTOP CHROMIUM · IPHONE 13 · IPAD PRO 11</text>
+</svg>
