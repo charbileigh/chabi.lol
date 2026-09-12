@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Implementation and release validation</title>
+  <desc id="desc">A change moves through scope, configuration, testing and release checkpoints.</desc>
+  <rect width="1200" height="700" fill="#fff067"/>
+  <path d="M0 80H1200M0 160H1200M0 240H1200M0 320H1200M0 400H1200M0 480H1200M0 560H1200M0 640H1200" stroke="#24131e" stroke-opacity=".06" stroke-width="2"/>
+  <rect x="58" y="52" width="1084" height="596" rx="20" fill="#fff8fc" stroke="#24131e" stroke-width="5"/>
+  <rect x="58" y="52" width="1084" height="74" rx="20" fill="#ffc5df"/>
+  <path d="M58 105h1084" stroke="#24131e" stroke-width="5"/>
+  <circle cx="105" cy="88" r="11" fill="#fff8fc" stroke="#24131e" stroke-width="4"/>
+  <circle cx="145" cy="88" r="11" fill="#fff067" stroke="#24131e" stroke-width="4"/>
+  <circle cx="185" cy="88" r="11" fill="#9b1757" stroke="#24131e" stroke-width="4"/>
+  <text x="600" y="96" text-anchor="middle" fill="#24131e" font-family="ui-monospace, monospace" font-size="25" font-weight="900">CASE_03 / RELEASE PIPELINE</text>
+  <path d="M185 360H1015" stroke="#24131e" stroke-width="12" stroke-linecap="round"/>
+  <g font-family="ui-monospace, monospace" text-anchor="middle" font-weight="900">
+    <g transform="translate(185 360)"><circle r="76" fill="#ffc5df" stroke="#24131e" stroke-width="6"/><text y="-5" fill="#24131e" font-size="21">SCOPE</text><text y="27" fill="#9b1757" font-size="16">DEPENDENCIES</text></g>
+    <g transform="translate(455 360)"><circle r="76" fill="#fff067" stroke="#24131e" stroke-width="6"/><text y="-5" fill="#24131e" font-size="21">CONFIGURE</text><text y="27" fill="#9b1757" font-size="16">IMPLEMENT</text></g>
+    <g transform="translate(745 360)"><circle r="76" fill="#ff4fa3" stroke="#24131e" stroke-width="6"/><text y="-5" fill="#24131e" font-size="21">VALIDATE</text><text y="27" fill="#24131e" font-size="16">API + DATA</text></g>
+    <g transform="translate(1015 360)"><circle r="76" fill="#24131e" stroke="#24131e" stroke-width="6"/><text y="-5" fill="#fff8fc" font-size="21">RELEASE</text><text y="27" fill="#ff4fa3" font-size="16">VERIFY</text></g>
+  </g>
+  <g fill="#fff8fc" stroke="#24131e" stroke-width="5">
+    <rect x="278" y="330" width="84" height="60" rx="30"/><rect x="570" y="330" width="84" height="60" rx="30"/><rect x="848" y="330" width="84" height="60" rx="30"/>
+  </g>
+  <g fill="none" stroke="#9b1757" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m302 360 14 14 25-31"/><path d="m594 360 14 14 25-31"/><path d="m872 360 14 14 25-31"/>
+  </g>
+  <rect x="132" y="517" width="936" height="67" rx="12" fill="#24131e"/>
+  <text x="600" y="560" text-anchor="middle" fill="#fff8fc" font-family="ui-monospace, monospace" font-size="21" font-weight="900">TRACEABLE READINESS EVIDENCE / POST-RELEASE CHECKS</text>
+  <path d="M1015 203v74" stroke="#ff4fa3" stroke-width="8" stroke-linecap="round"/>
+  <path d="m983 244 32 33 32-33" fill="none" stroke="#ff4fa3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
